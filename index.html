@@ -53,12 +53,12 @@
         <label for="frmNameB">Last Name</label>
         <input name="name" id="frmNameB" placeholder="last name" required autocomplete="family-name">
         <label for="frmPhoneNumA">Country Code</label>
-        <input type="tel" name="tel-country-code" id="frmPhoneNumA" placeholder="+1" required autocomplete="tel-country-code">
+        <input type="tel" name="tel-country-code" id="frmPhoneNumA" placeholder="+1" required autocomplete="tel-country-code" pattern="\d*>
         <label for="frmPhoneNumB">Phone</label>
-        <input type="tel" name="tel" id="frmPhoneNumB" placeholder="+1-650-450-1212" required autocomplete="tel">
+        <input type="tel" name="tel" id="frmPhoneNumB" placeholder="+1-650-450-1212" required autocomplete="tel" pattern="\d*>
         
         <label for="frmPhoneNumC">Phone without country Code</label>
-        <input type="tel" name="tel-national" id="frmPhoneNumC" placeholder="+1-650-450-1212" required autocomplete="tel-national">
+        <input type="tel" name="tel-national" id="frmPhoneNumC" placeholder="+1-650-450-1212" required autocomplete="tel-national" pattern="\d*>
 <label for="frmAddressS">Address</label>
               <input name="ship-address" required id="frmAddressS" placeholder="123 Any Street" autocomplete="shipping street-address">
               <label for="frmCityS">City</label>
