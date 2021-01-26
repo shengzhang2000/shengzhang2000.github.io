@@ -5,7 +5,7 @@
   <meta name="author" content="Ido Green | greenido.wordpress.com | @greenido">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#db5945">
-  <title>Auto Complete Attribute Example</title>
+  <title>FMm Auto Complete</title>
   <style type="text/css">
     input, textarea {
       padding-top: 0.5em;
@@ -43,9 +43,9 @@
     }
   </style>
 <body>
-  <h1>AutoComplete Example</h1>  
+  <h1>FBm AutoComplete Example</h1>  
   <div role="main">
-    <form method="post" id="usrForm">
+    <form method="post" id="usrForm" autocomplete="on">
       <fieldset>
         <legend>GoDaddy Form</legend>
         <label for="frmNameA">First Name</label>
@@ -53,13 +53,13 @@
         <label for="frmNameB">Last Name</label>
         <input name="name" id="frmNameB" placeholder="last name" required autocomplete="family-name">
         <label for="frmPhoneNumA">Country Code</label>
-        <input type="tel" name="tel-country-code" id="frmPhoneNumA" placeholder="+1" required autocomplete="tel-country-code" pattern="\d*>
+        <input type="text" name="tel-country-code" id="frmPhoneNumA" placeholder="+1" required autocomplete="tel-country-code" pattern="\d*>
         <label for="frmPhoneNumB">Phone</label>
-        <input type="tel" name="tel" id="frmPhoneNumB" placeholder="+1-650-450-1212" required autocomplete="tel" pattern="\d*>
+        <input type="text" name="tel" id="frmPhoneNumB" placeholder="+1-650-450-1212" required autocomplete="tel" pattern="\d*>
         
         <label for="frmPhoneNumC">Phone without country Code</label>
-        <input type="tel" name="tel-national" id="frmPhoneNumC" placeholder="+1-650-450-1212" required autocomplete="tel-national" pattern="\d*>
-<label for="frmAddressS">Address</label>
+        <input type="text" name="tel-national" id="frmPhoneNumC" placeholder="+1-650-450-1212" required autocomplete="tel-national" pattern="\d*>
+<label for="frmAddressS">street-address</label>
               <input name="ship-address" required id="frmAddressS" placeholder="123 Any Street" autocomplete="shipping street-address">
               <label for="frmCityS">City</label>
               <input name="ship-city" required id="frmCityS" placeholder="New York" autocomplete="shipping address-level2">
@@ -70,6 +70,19 @@
               <label for="frmCountryS">Country</label>
               <input name="ship-country" required id="frmCountryS" placeholder="USA" autocomplete="shipping country">
         
+             <label for="frmAddressS2">address-line1</label>
+              <input name="ship-address" required id="frmAddressS2" placeholder="123 Any Street" autocomplete="address-line1">
+              <label for="frmCityS">City</label>
+              <input name="ship-city" required id="frmCityS" placeholder="New York" autocomplete="shipping address-level2">
+              <label for="frmStateS">State</label>
+              <input name="ship-state" required id="frmStateS" placeholder="NY" autocomplete="shipping address-level1">
+              <label for="frmZipS">Zip</label>
+              <input name="ship-zip" required id="frmZipS" placeholder="10011" autocomplete="shipping postal-code">
+              <label for="frmCountryS">Country</label>
+              <input name="ship-country" required id="frmCountryS" placeholder="USA" autocomplete="shipping country">
+
+                                                                                                                    
+                                                                                                                    
         <!--
         
         <datalist id="chocType">
